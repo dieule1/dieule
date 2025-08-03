@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>times together</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Screen 1: Prompt -->
+  <div class="window" id="screen-1">
+    <h1>hi love :)</h1>
+    <p>want to see how long we've been together?</p>
+    <button onclick="showLoading()">YESSS</button>
+    <button onclick="maybeLater()">maybe later</button>
+  </div>
+
+  <!-- Screen 2: Loading -->
+  <div class="window hidden" id="screen-2">
+    <h1>calculating...</h1>
+    <p>loading our time together...</p>
+    <div class="progress-bar">
+      <div class="fill"></div>
+    </div>
+  </div>
+
+  <!-- Screen 3: Timer -->
+  <div class="window hidden" id="screen-3">
+    <h1>time we've spent together :) </h1>
+    <div id="counter"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
